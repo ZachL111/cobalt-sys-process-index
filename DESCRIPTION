@@ -1,0 +1,6 @@
+Package: CobaltSysProcessIndex
+Type: Package
+Title: CobaltSysProcessIndex
+Version: 0.1.0
+License: MIT
+Description: Build an R toolkit that studies process behavior through capacity fixtures, with allocation and spill reports and local-only command execution.
