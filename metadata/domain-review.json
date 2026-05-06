@@ -1,0 +1,73 @@
+{
+  "repo": "cobalt-sys-process-index",
+  "language": "R",
+  "category": "Systems programming",
+  "goal": "Build an R toolkit that studies process behavior through capacity fixtures, with allocation and spill reports and local-only command execution.",
+  "review_model": {
+    "terms": [
+      "allocation pressure",
+      "dirty state",
+      "guard slack",
+      "layout drift"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "allocation pressure",
+      "signal": 48,
+      "slack": 49,
+      "drag": 26,
+      "confidence": 74,
+      "score": 141,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "dirty state",
+      "signal": 44,
+      "slack": 34,
+      "drag": 17,
+      "confidence": 89,
+      "score": 160,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "guard slack",
+      "signal": 76,
+      "slack": 23,
+      "drag": 19,
+      "confidence": 81,
+      "score": 199,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "layout drift",
+      "signal": 57,
+      "slack": 31,
+      "drag": 9,
+      "confidence": 54,
+      "score": 172,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "allocation pressure",
+      "signal": 58,
+      "slack": 51,
+      "drag": 11,
+      "confidence": 47,
+      "score": 181,
+      "lane": "ship"
+    }
+  ]
+}
