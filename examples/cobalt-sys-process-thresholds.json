@@ -1,0 +1,17 @@
+{
+  "repo": "cobalt-sys-process-index",
+  "thresholds": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 4,
+    "ship": 191,
+    "watch": 120
+  },
+  "terms": [
+    "allocation pressure",
+    "dirty state",
+    "guard slack",
+    "layout drift"
+  ]
+}
